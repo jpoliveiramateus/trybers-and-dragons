@@ -54,6 +54,8 @@ export default class Character implements Fighter {
     if (this._maxLifePoints > this._race.maxLifePoints) {
       this._maxLifePoints = this._race.maxLifePoints;
     }
+
+    this._lifePoints = this._maxLifePoints;
   }
 
   get race(): Race {
