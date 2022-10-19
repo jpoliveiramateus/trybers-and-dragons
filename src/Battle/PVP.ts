@@ -19,8 +19,6 @@ export default class PVP extends Battle {
       otherPlayer = saveCurrentPlayer;
     }
 
-    const winner = currentPlayer === this._player1 ? -1 : 1;
-
-    return winner;
+    return super.fight();
   }
 }
